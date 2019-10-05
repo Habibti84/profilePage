@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <a class="btnBack btn btn-outline-secondary" href="../index.html">Zurück</a>
+    <div class="container">
+      <h1 class="display-4">Tic Tac Toe</h1>
+    </div>
+  </div>
+
+  <div class="player container">
+    <div class="row">
+      <div id = "playerX" class="col col-sm">
+        Spieler X: <span id="player1"></span>
+      </div>
+      <div class="col col-sm">
+        <span id="winner"></span>
+      </div>
+      <div id = "playerY" class="col col-sm">
+        Spieler O: <span id="player2"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game container">
+    <div class="innerContainer">
+
+      <div class="row">
+        <div class="border-top-0 border-left-0 colGame col col-sm">
+          0
+        </div>
+        <div class="border-top-0 colGame col col-sm">
+          0
+        </div>
+        <div class="border-top-0 border-right-0 colGame col col-sm">
+          0
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="border-left-0 colGame col col-sm">
+          0
+        </div>
+        <div class="colGame col col-sm">
+          0
+        </div>
+        <div class="border-right-0 colGame col col-sm">
+          0
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="border-bottom-0 border-left-0 colGame col col-sm">
+          0
+        </div>
+        <div class="border-bottom-0 colGame col col-sm">
+          0
+        </div>
+        <div class="border-bottom-0 border-right-0 colGame col col-sm">
+          0
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="innerContainer">
+
+
+
+      <div class="row">
+        <div class="paddingZero border-bottom-0 border-left-0 col-sm-12">
+        </div>
+        <div class="paddingZero border-bottom-0 col-sm-12">
+          <div class="container buttonContainer">
+            <button id = "empty" class="btn btn-dark" type="button" name="button">Neues Spiel</button>
+          </div>
+        </div>
+        <div class="paddingZero border-bottom-0 border-right-0 col-sm-12">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

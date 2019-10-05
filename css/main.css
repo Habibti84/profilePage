@@ -1,0 +1,291 @@
+* {
+  font-family: 'Quicksand';
+}
+
+.extraMarg {
+  padding-top: 3rem;
+}
+
+.fix {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+#header {
+  background-image: url('../img/index.jpg');
+  width: 100%;
+  background-position: left;
+  background-size: cover;
+  padding: 0;
+}
+
+header h1 {
+  /*display: inline-block;*/
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding:2rem;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.containerCenter {
+  position: relative;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#headerFoot {
+  display: block;
+  color: white;
+  bottom: 0;
+  height: 3rem;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#headerFoot p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.grey {
+  background-color: #f3efe0;
+  z-index: -1
+}
+
+.col-sm {
+  z-index: 0;
+}
+
+.navbar-brand {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+nav {
+  background-color: black;
+  z-index: 1;
+}
+
+#first {
+  z-index: 1;
+}
+
+#first a:hover {
+  background-color: #22a39f;
+
+}
+
+button i {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#navbarNav {
+  position: absolute;
+  margin-right: 1rem;
+  right: 0;
+  color: white;
+}
+
+#profil .row {
+  padding-bottom: 1.5rem;
+}
+
+.container h2 {
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #22a39f;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.container-fluid p {
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #606060;
+  color: #606060;
+  text-align: center;
+}
+
+.innerContainer h3 {
+  margin-top: 2rem;
+  color: #22a39f;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  border: none;
+}
+
+.innerContainer p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  border: none;
+  color: #606060;
+  text-align: left;
+}
+
+.img {
+  text-align: center;
+}
+
+img {
+  width: 80%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+#ziele img {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+.row {
+  margin-top: 2rem;
+}
+
+.edu {
+  padding-bottom: 2rem;
+}
+
+#projekte .containerCenter {
+  margin-bottom: 2rem;
+}
+
+.edu p {
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  border: none;
+}
+ul {
+  padding: 0;
+}
+
+.skills li {
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.skills li:hover {
+  background-color: #f2f2f2;
+}
+
+.skills .faehigkeitBeschr {
+  text-align: left;
+}
+
+.skills .faehigkeitRate {
+  position: absolute;
+  right: 1rem;
+}
+
+.skills i {
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+}
+
+.skills faehigkeitRate:hover {
+  padding-left: 0.4rem;
+}
+
+.filled {
+  color: #22a39f;
+}
+
+.unfilled {
+  color: #dddddd;
+}
+
+.extraMarg a {
+  color: black;
+}
+
+#zitat span {
+  font-size: 0.8rem;
+}
+
+#projekt img {
+  z-index: 1;
+}
+
+#projekte .col-sm div {
+  background-color: white;
+  color: #22a39f;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  height: 15rem;
+
+}
+
+#projekte h4 {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+#projekte .col-sm div:hover {
+  background-color: #22a39f;
+  color: white;
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+}
+
+@media screen and (max-width: 770px) {
+header h1 {
+  font-size: 2rem;
+}
+
+
+
+#navbarNav {
+  top: 56px;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  background-color: #22a39f;
+  z-index: 1;
+}
+#navbarNav li {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  z-index: 1;
+  padding-right: 1rem;
+}
+
+.background {
+  background-color: #22a39f;
+}
+
+}

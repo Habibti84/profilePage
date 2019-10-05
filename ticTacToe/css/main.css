@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+
+body {
+  background-color: #f7f6ed;
+}
+
+.jumbotron {
+  background-color: #04253a;
+  color: #f7f6ed;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.innerContainer {
+  margin: auto;
+  width: 50%;
+
+}
+
+.player {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+#playerX {
+  text-align: left;
+}
+
+#playerY {
+  text-align: right;
+}
+
+#winner {
+  text-align: center;
+}
+
+.colGame {
+  text-align: center;
+  color: #f7f6ed;
+  border: 2px solid black;
+  font-family: "Major Mono Display";
+  font-weight: 600;
+  font-size: 5.5rem;
+}
+
+.paddingZero {
+  padding: 0;
+}
+
+.buttonContainer {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0;
+}
+.btn {
+  background-color: #4c837a;
+  border: 1px solid #4c837a;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #04253a;
+}
+
+.btnBack {
+  width: 7rem;
+  color: white;
+  margin-left: 0.5rem;
+  font-size: 1rem !important;
+}
+
+@media screen and (min-width: 1500px) {
+
+  .player {
+    padding-top: 3rem;
+  }
+
+  .innerContainer {
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 770px) {
+
+  .jumbotron {
+    text-align: center;
+  }
+
+
+
+  .innerContainer {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .game {
+    padding-top: 2rem;
+  }
+
+  .colGame {
+    font-size: 4rem;
+  }
+
+  .player {
+    font-size: 1rem;
+  }
+  #playerY {
+    text-align: left;
+  }
+
+  #winner {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin-top: 0;
+  }
+
+}
