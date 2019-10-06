@@ -1,5 +1,5 @@
 var w = window.innerHeight;
-console.log(w);
+
 
 
 window.addEventListener('load', function() {
@@ -12,23 +12,30 @@ window.addEventListener('load', function() {
 
   }
 
+  
+  window.addEventListener('scroll', function() {
+    var lastKnownPos = window.scrollY;
+    console.log(lastKnownPos);
+    var header = document.getElementById('first');
+    if(lastKnownPos >= w) {
+      header.classList.add('fix');
+    }
+
+    else {
+      header.classList.remove('fix');
+    }
+
+
+  })
+
+
+
+
+
 
 });
 
-window.addEventListener('scroll', function() {
-  var lastKnownPos = window.scrollY;
-  console.log(lastKnownPos);
-  var header = document.getElementById('first');
-  if(lastKnownPos >= w) {
-    header.classList.add('fix');
-  }
 
-  else {
-    header.classList.remove('fix');
-  }
-
-
-})
 $(document).ready(function(){
 
 $(this).scrollTop(0);
