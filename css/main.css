@@ -44,6 +44,8 @@ header h1 {
   transform: translate(-50%, -50%);
 }
 
+
+
 #headerFoot {
   display: block;
   color: white;
@@ -228,7 +230,7 @@ ul {
   color: black;
 }
 
-#zitat span {
+.zitat span {
   font-size: 0.8rem;
 }
 
@@ -261,12 +263,35 @@ ul {
   height: 15rem;
 }
 
-@media screen and (max-width: 770px) {
+#kontakt p {
+  text-align: center;
+}
+.noMarg {
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
+.noMarg p {
+  text-align: justify;
+}
+
+#noPad {
+  text-align: justify;
+}
+
+#smile {
+  font-size: 1.3rem;
+}
+
+#imgMe {
+  text-align: center;
+  margin-top: 2.7rem;
+}
+
+@media screen and (max-width: 600px) {
 header h1 {
   font-size: 2rem;
 }
-
-
 
 #navbarNav {
   top: 56px;
@@ -276,6 +301,7 @@ header h1 {
   background-color: #22a39f;
   z-index: 1;
 }
+
 #navbarNav li {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
@@ -286,6 +312,10 @@ header h1 {
 
 .background {
   background-color: #22a39f;
+}
+
+imgMe {
+  margin-top: 0;
 }
 
 }

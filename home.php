@@ -1,10 +1,27 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['username'])) {
+  header('Location: index.html');
+}
+
+$userName = $_SESSION['username'];
+
+
+if($userName == 'NamicsAG') {
+  $text = "Als ich mich über die Namics AG informiert habe, war ich begeistert. Die Projekte in Ihrem Portfolio entsprechen genau dem, was mich interessiert. WebApps und ECommerce-Shops im grossen Stil, nach den neusten Standards und dazu eine Firmenpolitik, bei der das Wohlbefinden der Mitarbeiter ganz weit oben steht. Es ist ein Traum, bei einem solch professionellen Entwicklerteam meinen Horizont zu erweitern und in so einem Umfeld zu arbeiten. <br> Ausserdem hatten wir einen Match bei den wichtigsten Eigenschaften zur Firmenkultur <span id='smile'>☺</span>: Hilfsbereitschaft, Ehrgeiz und Mut.";
+}
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="keywords" content="Jacqueline Motzer Profil Seite">
+  <meta name="description" content="Lernen Sie mich etwas kennen">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/13c7738e3b.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -58,22 +75,26 @@
   <div id="profil" class="container extraMarg ">
     <div class="container-fluid">
       <h2>Profil</h2>
-      <p id="zitat">"Wähle einen Beruf den du liebst, und du brauchst keinen Tag mehr zu Arbeiten" <br> <span>-Konfuzius</span> </p>
+      <p class="zitat">"Wähle einen Beruf den du liebst, und du brauchst keinen Tag mehr zu Arbeiten." <br> <span>-Konfuzius</span> </p>
     </div>
     <div class="container-fluid innerContainer">
-      <div class="row">
-        <div class="col-sm">
+      <div class="row noMarg">
+        <div class="col-sm col-md-6">
           <h3>Über mich</h3>
-          <p>Nach einem Jahr autodidakten Lernens (HTML5, CSS3, JavaScript, PHP7) und gründlichem Überlegen, habe ich mich im April 2018 entschieden, nochmals einen ganz neuen Weg einzuschlagen und mich an der <a href="https://www.wiss.ch/de-CH" target="_blank">WISS St. Gallen</a> für den Lehrgang "Informatikerin EFZ – Fachrichtung Applikationsentwicklung" angemeldet. </p>
-          <p>Ab Sommer 2020 suche ich nun eine Praktikumsstelle, die meine Ausbildung vervollständigt.</p>
-          <p>Ich bin lernbegierig, engagiert, und ehrgeizig. Während meiner Zeit im Praktikum werde ich 150% geben.
-          </p>
+          <p class="noMarg">Im April 2018 habe ich mich nach gründlichem Überlegen dazu entschieden, meine Selbständigkeit aufzugeben und nochmals einen ganz neuen Weg einzuschlagen und mich an der <a href="https://www.wiss.ch/de-CH" target="_blank">WISS St. Gallen</a> für den Lehrgang "Informatikerin EFZ – Applikationsentwicklung" eingeschrieben. Dieser Schritt hat mich viel Mut gekostet, da ich ein regelmässiges Einkommen, gegen eine unbekannte Zukunft getauscht habe.</p>
+          <p id="noPad">Da ich mich aber zu dem Zeitpunkt schon seit über einem Jahr autodidakt mit PHP 7 und JavaScript beschäftigt habe und mir das wahnsinnig Spass gemacht hat, wollte ich den Schritt gehen.<br>Nun bin ich seit über einem Jahr in der Ausbildung und ich bereue keinen Tag, diese Entscheidung getroffen zu haben. Dieser Hintergrund und die Freude am Programmieren, wecken bei mir immer wieder den Ehrgeiz, vollen Einsatz zu geben.<br>Der nächste, wichtige Schritt für meine neue Zukunft steht nun an. Um diese Ausbildung abzuschliessen, brauche ich ab dem 1. August 2020 eine Praktikumstelle, wo ich das dritte und vierte Jahr meiner Ausbildung absolvieren kann.</p>
+
         </div>
-        <div class="img col-sm">
+
+        <div id="imgMe" class="col-sm col-md-3">
+
           <img src="img/me.jpg" class="rounded-circle" alt="Jacqueline Motzer">
+
         </div>
-        <div class="col-sm">
+
+        <div class="col-sm col-md-3">
           <h3>Details</h3>
+
           <p>
             <strong>Name:</strong>
             <br>
@@ -87,7 +108,9 @@
             <br>
             Herisau
           </p>
+
         </div>
+
       </div>
     </div>
   </div>
@@ -95,14 +118,14 @@
   <div id="ziele" class="grey container-fluid extraMarg">
     <div class="container">
       <h2>Ziele</h2>
-      <p id="zitat"></p>
+      <p class="zitat">"Wenn du ein glückliches Leben führen willst, konzentriere dich auf ein Ziel, nicht auf Menschen oder Gegenstände." <br> <span>-Albert Einstein</span> </p>
       <div class="container img">
         <div class="row edu">
           <div class="col-sm col-md-4">
             <img src="img/aim.jpg" class="rounded-circle" alt="">
           </div>
           <div class="col-sm col-md-8">
-            <p>Diese Ausbildung bedeutet mir alles und ich will sie zu meinem Allerbesten nutzen. Der nächste Schritt zu diesem Ziel, ist eine Praktikumsstelle zu finden, die mir die Möglichkeit bietet, mich dahin gehend zu entwickeln. Abacus Research AG steht für Applikations-Lösungen auf höchstem Niveau und es wäre ein Traum, der für mich in Erfüllung geht, wenn ich meine Ausbildung im diesbezüglich besten Unternehmen der Region weiterführen könnte und ein riesiger Schritt in das Erreichen meines Ziels.</p>
+            <p>Diese Ausbildung bedeutet mir alles und ich will sie zu meinem Allerbesten nutzen. Mein Ziel ist es, eine qualifizierte und begeisterte Applikations-Entwicklerin zu werden. Der nächste Schritt zu diesem Ziel, ist eine Praktikumsstelle zu finden, die mir die Möglichkeit bietet, mich dahin gehend zu entwickeln.<br> <?php echo $text ?><br>Wenn ich bei Ihnen mein Praktikum absolvieren kann, ist der nächste und ein riesiger Schritt zu meinem Ziel getan. Ich bin bereit vollen Einsatz zu geben und mich einzubringen, um mein Ziel zu erreichen und mich trotz meines Anfängerniveaus als Mehrwert für das Unternehmen einzubringen.</p>
           </div>
         </div>
         </div>
@@ -112,7 +135,7 @@
   <div id="schule" class="container-fluid extraMarg ">
     <div class="container">
       <h2>Schule</h2>
-      <p id="zitat">"Bildungshunger und Wissensdurst sind keine Dickmacher" <br> <span>-Lothar Schmidt</span> </p>
+      <p class="zitat">"Bildungshunger und Wissensdurst sind keine Dickmacher." <br> <span>-Lothar Schmidt</span> </p>
       <div class="container">
         <div class="row edu">
           <div class="col-sm">
@@ -136,7 +159,7 @@
             </p>
           </div>
           <div class="col-sm">
-            <p>HTML, CSS, JavaScript, PHP</p>
+            <p>HTML 5, CSS 3, JavaScript, PHP 7</p>
           </div>
         </div>
 
@@ -187,7 +210,7 @@
   <div id="arbeit" class="grey container-fluid extraMarg ">
     <div class="container">
       <h2>Arbeit</h2>
-      <p id="zitat">"Wähle einen Beruf den du liebst, und du brauchst keinen Tag mehr zu Arbeiten" <br> <span>-Konfuzius</span> </p>
+      <p class="zitat">"Wähle einen Beruf den du liebst, und du brauchst keinen Tag mehr zu Arbeiten." <br> <span>-Konfuzius</span> </p>
       <div class="container">
         <div class="row edu">
           <div class="col-sm">
@@ -231,10 +254,10 @@
     </div>
   </div>
 
-  <div id="faehigkeit" class="skills container-fluid extraMarg ">
+  <div id="faehigkeit" class="skills container-fluid extraMarg">
     <div class="container">
       <h2>Fähigkeiten</h2>
-      <p id="zitat">"Niemand weiss, was er kann, bevor er es versucht" <br> <span>-Publilius Syrus</span></p>
+      <p class="zitat">"Niemand weiss, was er kann, bevor er es versucht." <br> <span>-Publilius Syrus</span></p>
       <div class="container innerContainer">
         <h3>Skills</h3>
         <div class="row edu">
@@ -258,7 +281,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 
   <div id="sprachen" class="skills container-fluid ">
     <div class="container">
@@ -289,48 +312,65 @@
           <div class="col-sm">
             <ul>
               <li><span class="faehigkeitBeschr">Atom</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
-              <li><span class="faehigkeitBeschr">Git</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+              <li><span class="faehigkeitBeschr">Git</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               <li><span class="faehigkeitBeschr">Eclipse</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               </ul>
             </div>
             <div class="col-sm">
               <ul>
-                <li><span class="faehigkeitBeschr">Git Hub</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+                <li><span class="faehigkeitBeschr">Git Hub</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
                 <li><span class="faehigkeitBeschr">Xampp</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+                <li><span class="faehigkeitBeschr">phpMyAdmin</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </div>
 
 
-    <div id="projekte" class="grey container-fluid">
+    <div id="projekte" class="grey container-fluid extraMarg">
       <div class="container">
         <h2>Projekte</h2>
-        <p id="zitat" >"Bildungshunger und Wissensdurst sind keine Dickmacher" <br> <span>-Lothar Schmidt</span> </p>
+        <p class="zitat" >"Es ist nicht genug zu wissen, man muss es auch anwenden. Es ist nicht genug zu wollen, man muss es auch tun." <br> <span>-Johann Wolfgang von Goethe</span> </p>
         <div class="container">
           <div class="row edu">
 
             <div class="col-sm">
-              <a href="#"><div class="containerCenter">
+              <a href="ticTacToe/ticTacToe.html"><div class="containerCenter">
                 <h4 class="center">Tic Tac Toe</h4>
               </div></a>
             </div>
 
             <div class="col-sm">
-              <a href="#"><div class="containerCenter">
+              <a href="hangman/hangman.html"><div class="containerCenter">
                 <h4 class="center">Hangman</h4>
               </div></a>
             </div>
 
+
+
+          </div>
+
+          <div class="row edu">
+
             <div class="col-sm">
-              <a href="#"><div class="containerCenter">
+              <a href="spielcharts/index.php" target="_blank"><div class="containerCenter">
                 <h4 class="center">Spiel Charts</h4>
               </div></a>
             </div>
 
+            <div class="col-sm">
+              <a href="abrechnung_neu/index.php" target="_blank"><div class="containerCenter">
+                <h4 class="center">Abrechnung, Jacqueline's Kunden</h4>
+              </div></a>
+            </div>
+
+
+
           </div>
+
         </div>
       </div>
     </div>
@@ -339,51 +379,13 @@
     <div id="kontakt" class="container-fluid extraMarg">
       <div class="container">
         <h2>Kontakt</h2>
-        <p id="zitat">"Bildungshunger und Wissensdurst sind keine Dickmacher" <br> <span>-Lothar Schmidt</span> </p>
+        <p class="zitat">"Wer nicht neugierig ist, erfährt nichts." <br> <span>-Johann Wolfgang von Goethe</span> </p>
         <div class="container">
           <div class="row edu">
             <div class="col-sm">
-
+              <p>Jacquelie Motzer<br>Sonnenböhlstrasse 17<br>9100 Herisau<br>078 944 22 72<br><a href="mailto: jm@jmotzer.ch">jm@jmotzer.ch</a></p>
             </div>
-            <div class="col-sm">
 
-            </div>
-          </div>
-
-          <div class="row edu">
-            <div class="col-sm">
-
-            </div>
-            <div class="col-sm">
-
-            </div>
-          </div>
-
-          <div class="row edu">
-            <div class="col-sm">
-
-            </div>
-            <div class="col-sm">
-
-            </div>
-          </div>
-
-          <div class="row edu">
-            <div class="col-sm">
-
-            </div>
-            <div class="col-sm">
-
-            </div>
-          </div>
-
-          <div class="row edu">
-            <div class="col-sm">
-
-            </div>
-            <div class="col-sm">
-
-            </div>
           </div>
         </div>
       </div>

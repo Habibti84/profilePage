@@ -1,0 +1,149 @@
+* {
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: #e5f1f3;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  width: 30%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#top {
+  width: 75%;
+  display: block;
+  float: right;
+  //padding: 20px;
+  background-color: #4b5151;
+}
+
+#top ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#top li {
+  float: left;
+  margin: 20px 30px;
+}
+
+#top li :hover {
+  color: #b2d9d9;
+}
+
+#top a {
+  font-size: 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#left {
+  clear: both;
+  display: inline;
+  background-color: #b2d9d9;
+  width: 25%;
+  float: left;
+  margin-top: 100px;
+}
+
+#left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#left  li {
+  margin: 20px;
+  padding: 10px;
+
+}
+
+#left li :hover {
+  color: #f8fcfc;
+}
+
+#left a {
+  font-size: 20px;
+  color: #4b5151;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  width: 15%;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  //float: left;
+  width: 50%;
+  margin: 100px auto;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+td, th {
+  text-align: left;
+  padding-left: 5px;
+  height: 45px;
+}
+
+input, select {
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  width: 20%;
+  padding: 5px 10px;
+  margin: 15px auto;
+}
+
+select {
+  width: 22%;
+}
+
+#btn {
+  width: 20%;
+}
+
+#checkdiv {
+  width: 20%;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 15px auto;
+  font-size: 1.2rem;
+}
+
+/*#check {
+  display: inline;
+}*/
+
+@media screen and (max-width: 600px) {
+  h1 {
+    margin: 10px auto;
+  }
+
+  #checkdiv {
+    width: 100%;
+
+  }
+
+  #btn {
+    width: 95%;
+  }
+
+  input, select {
+    width: 90%;
+
+  }
+  select {
+    width: 95%;
+  }
+}

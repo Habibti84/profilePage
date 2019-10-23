@@ -1,0 +1,161 @@
+* {
+  font-family: 'ubuntu';
+}
+
+body {
+  color: #4b5151;
+  background-color: #fbfdfd;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  //color: #4b5151;
+  margin: 150px auto;
+  text-align: center;
+}
+
+form {
+  background-color: #a5ccd4;
+  text-align: center;
+  width: 100%;
+  margin: 150px auto 20px auto;
+  padding: 20px 0;
+}
+
+form input {
+  width: 25%;
+  height: 40px;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+form input:hover {
+  border: 2px solid #4b5151;
+}
+
+form input:focus {
+  border: 2px solid #4b5151;
+}
+
+.second {
+  margin-top: 0;
+}
+
+.second label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+#btn {
+  font-size: 16px;
+  color: #4b5151;
+  display: block;
+  width: 25.2%;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #edf3f3;
+  border: 2px solid #edf3f3;
+}
+
+#btn:hover {
+  border: 2px solid #4b5151;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (max-height: 770px) and (max-width: 1400px) {
+
+  h1 {
+    font-size: 35px;
+    margin: 120px auto;
+  }
+
+  form {
+    margin-top: 100px;
+  }
+
+  form input {
+    width: 20%;
+    //height: 30px;
+  }
+
+  #btn {
+    width: 20%;
+    //height: 30px;
+    font-size: 14px;
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 27px;
+    margin: 50px auto;
+  }
+
+  form {
+    margin: 50px auto 20px auto;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+
+  form input {
+    width: 25%;
+    height: 25px;
+    padding: 2px;
+  }
+
+  #btn {
+    width: 25%;
+    height: 33px;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  h1 {
+   font-size: 25px;
+   margin: 70px auto;
+  }
+
+  form {
+    width: 95%;
+    padding-top: 20px;
+  }
+
+  form input {
+    display: block;
+    width: 85%;
+    margin: 0 auto 5px auto;
+    text-align: center;
+
+  }
+
+
+
+  #btn {
+    width: 87%;
+  }
+
+
+}

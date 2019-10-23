@@ -1,0 +1,365 @@
+* {
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  color: #2e3636;
+}
+
+.bg-light {
+  background-color: #3c727c !important;
+
+}
+
+.navbar-light, .nav-item {
+  font-size: 1.2rem;
+
+}
+
+a.nav-link {
+  
+  color: white !important;
+}
+
+button.navbar-toggler {
+  color: white !important;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: white !important;
+}
+
+
+/*.navbar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #50828b;
+}*/
+
+.dropLines {
+  display: none;
+}
+
+.innerNav {
+  width: 51%;
+  margin: auto;
+}
+
+
+
+#personal {
+  float: right;
+}
+
+
+#head {
+  width: 85%;
+  margin: auto;
+}
+
+#inHead {
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  display: inline;
+  width: 60%;
+  float: left;
+  margin: 60px 0 40px 0;
+  text-align: left;
+  font-size: 35px;
+}
+
+
+
+#adress {
+  width: 40%;
+  height: 96px;
+  float: right;
+  margin: 55px 0 35px 0;
+  padding: 10px 0 0 0;
+  text-align: right;
+  font-size: 16px;
+}
+
+.table {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h2 {
+  clear: both;
+  width: 60%;
+  //color: #4b5151;
+  margin: 0 auto 20px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #e6f8f7;
+  border-bottom: 2px solid #bcebe9;
+}
+
+#hTwo {
+  margin-top: 50px;
+}
+
+table {
+  width: 60%;
+  margin: auto;
+  //margin-left: 150px;
+}
+
+tbody, th, td, tfoot {
+  text-align: left;
+  border: 1px solid black;
+  padding: 7px;
+  margin: 5px;
+}
+
+#total {
+  margin: 50px auto;
+  //margin-left: 150px;
+  background-color: #bcebe9;
+}
+
+.date {
+  width: 25%;
+}
+
+.time {
+  width: 10%;
+}
+
+.bemerk {
+  width: 50%;
+}
+
+.total {
+  width: 15%;
+}
+
+h3 {
+  width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: #b2d9d9;
+}
+
+form {
+  width: 95%;
+  margin: auto;
+}
+
+
+
+.btn {
+  clear: both;
+  display: block;
+  width: 15%;
+  height: 35px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  color: #50828b;
+  background-color: #fff;
+  border: 1px solid #50828b;
+  font-size: 18px;
+}
+
+#hover:hover {
+  color: #d40053;
+  border-color: #d40053;
+  background-color: #fff;
+}
+
+tfoot {
+  width: 70.5%;
+}
+
+
+
+@media screen and (max-width: 1400px){
+
+#innerNav, #left, #head, #inHead, #body, h2, table {
+  width: 95%;
+}
+
+.btn {
+  font-size: 13px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+  .innerNav {
+    width: 95%;
+  }
+
+  #head {
+    width: 95%;
+    margin: auto;
+  }
+
+  #inHead {
+    width: 95%;
+  }
+
+  h1 {
+    width: 60%;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  #adress {
+    font-size: 12px;
+    height: auto;
+    margin: 20px 0;
+
+    //margin-top: 10px;
+    padding: 0;
+  }
+
+  #body {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    width: 95%;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  #hTwo {
+    margin-top: 20px;
+
+  }
+
+  table {
+    width: 95%;
+    font-size: 12px;
+  }
+
+
+
+  #total {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 95%;
+    height: 28px;
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 635px){
+
+  .navbar {
+    padding-left: 4.875%;
+    font-size: 20px;
+  }
+
+  .innerNav {
+    width: 100%;
+  }
+
+
+  h1 {
+    font-size: 20px;
+  }
+
+  /*.btnDrop {
+    background-color: #50828b;
+    width: 100%;
+    min-height: 33px;
+    text-align: right;
+    overflow: hidden;
+
+  }
+
+  .phoneQuery .dropLines {
+    background-color: #50828b;
+    border: none;
+    padding: 0;
+    padding-left: 90%;
+    margin: 7.75px 4.875% 7.75px 0;
+  }
+
+  .dropLines {
+    color: white;
+    display: block;
+  }
+
+  .dropLines .svg-inline--fa.fa-bars.fa-w-14 {
+    font-size: 25px;
+  }
+
+
+
+
+
+  .navbar a {
+    display: none;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar button {
+    display: none;
+  }*/
+
+
+
+
+  /* Dropdown content (hidden by default) */
+
+  /*.dropLines:hover {
+    overflow: visible;
+  }
+
+  .dropdown .dropdown-content {
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+  .svg-inline--fa.fa-bars.fa-w-14 {
+    display: inline;
+    color: white;
+    font-size: 20px;
+  }*/
+
+
+
+
+
+  .bemerk {
+    display: none;
+  }
+
+}

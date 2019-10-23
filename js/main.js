@@ -1,5 +1,5 @@
 var w = window.innerHeight;
-
+console.log("windowheight: " + w);
 
 
 window.addEventListener('load', function() {
@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
 
   }
 
-  
+
   window.addEventListener('scroll', function() {
     var lastKnownPos = window.scrollY;
     console.log(lastKnownPos);
@@ -38,6 +38,7 @@ window.addEventListener('load', function() {
 
 $(document).ready(function(){
 
+//beim Laden der Seite nach oben springen
 $(this).scrollTop(0);
 
 
@@ -51,6 +52,14 @@ $(this).scrollTop(0);
   $('li.nav-item').click(function(){
     $('#navbarNav').hide();
 
+  });
+
+  //Jeden Container mindest. windowsheight
+  $('.extraMarg').each(function() {
+    console.log("This height: " + $(this).height());
+    if($(this).height() < w) {
+      $(this).height(w);
+    }
   });
 
 

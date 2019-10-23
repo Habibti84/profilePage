@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 120px auto 40px auto;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+h4 {
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.background {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.laufendesSpiel p {
+  width: 25%;
+  text-align: left;
+  margin: 0 auto 0.7rem auto;
+}
+
+#mitspieler {
+  font-weight: 900;
+}
+
+input {
+  width: 25%;
+  height: 2rem;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.first input, .second input {
+  width: 75%;
+
+}
+
+.second {
+  margin-top: 0;
+}
+
+.second label, .first label {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.first label {
+  margin-top: 0;
+}
+
+
+
+.third {
+  margin-top: 100px;
+}
+
+.bottom {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  width: 25%;
+  text-align-last: center;
+}
+
+option {
+margin: auto;
+}
+
+.one {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  background-color: #38394d;
+  border: 1px solid #38394d;
+  color: white;
+  font-family: 'Montserrat';
+  display: block;
+  width: 25%;
+  height: 35px;
+  margin: 5px auto;
+
+}
+
+.third .btn {
+  margin-top: 25px;
+}
+
+select .btn {
+  margin-bottom: 5px;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.pkt:nth-child(even) {background: white}
+.pkt:nth-child(odd) {background: #e9eaef}
+
+
+
+.onlyButtons {
+  margin-top: 150px;
+}
+
+.onlyButtons .btn {
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background-color: #fffcba;
+  color: #38394d;
+  border: 1px solid #acacac;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.container p {
+  font-size: 1.2rem;
+}
+
+.input {
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  position:fixed;
+  margin: auto;
+  bottom: 0;
+}
+
+footer img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+#tblH1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+#tbl {
+    background-color: pink;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tr {
+  width: 80%;
+  font-size: 1rem;
+
+}
+
+td {
+  width: 50%;
+  margin: 1% 0;
+  padding: 0.5rem;
+}
+
+.spieler {
+  text-align: center;
+  background-color: #38394d;
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 10px 0;
+}
+
+.sum {
+  background-color: #38394d;
+  color: white;
+}
+
+.eingabe {
+  width: 75%;
+  height: 1.6rem;
+}
+
+#submt {
+  width: 10%;
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+
+td {
+  height: 1.5rem;
+  text-align: center;
+}
+
+td span {
+  font-weight: 900;
+}
+
+.extraMarg {
+  margin-bottom: 300px;
+}
+
+
+@media screen and (max-width: 990px) {
+
+  h1 {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  input, input.btn, select.btn, .btn, .first input, .second input {
+    text-align: center;
+    width: 90%;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  input.btnEing {
+    width: 30%;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  .eingabe {
+    font-size: 1rem;
+  }
+
+  .second input, #btnSub {
+    margin-bottom: 6rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+  button.navbar-toggler {
+    font-size: 1.2rem;
+  }
+  a.navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  a.dropdown-item {
+    font-size: 1.2rem;
+  }
+
+  .laufendesSpiel p {
+    width: 90%;
+    text-align: left;
+
+  }
+
+  footer img {
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  input, input.btn, select.btn, .btn, .first input, .second input {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    margin: 2rem auto;
+  }
+  .background {
+    width: 100%;
+    background-color: #e2e3ea;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .container p {
+    font-size: 1.3rem;
+  }
+
+  .row {
+    margin-top: 2rem;
+  }
+
+  div.col-sm {
+  padding: 0;
+  }
+
+  .first label, .second label, .first input, .second input {
+    font-size: 1.2rem;
+  }
+
+  .second input, #btnSub {
+    margin-bottom: 7rem;
+  }
+}
