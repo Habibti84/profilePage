@@ -34,7 +34,7 @@ if(!isset($username)) {
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="neuesSpiel_anzSpieler.php">Neues Spiel</a>
           <a class="dropdown-item" href="laufendesSpiel.php">Laufendes Spiel</a>
-          <a class="dropdown-item" href="#">Statistik</a>
+          <!--<a class="dropdown-item" href="#">Statistik</a>-->
         </div>
       </li>
         </ul>
@@ -50,9 +50,9 @@ if(!isset($username)) {
       <a href="laufendesSpiel.php">
       <input class="btn" type="submit" name="laufendesSpiel" value="Laufendes Spiel">
       </a>
-      <a href="statistik.php">
+      <!--<a href="statistik.php">
       <input class="btn" type="submit" name="statistik" value="Statistik">
-      </a>
+    </a>-->
 
     </div>
 

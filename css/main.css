@@ -288,6 +288,7 @@ ul {
   margin-top: 2.7rem;
 }
 
+
 @media screen and (max-width: 600px) {
 header h1 {
   font-size: 2rem;
@@ -317,5 +318,8 @@ header h1 {
 imgMe {
   margin-top: 0;
 }
+
+
+
 
 }

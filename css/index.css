@@ -308,4 +308,8 @@ header h1 {
   background-color: #22a39f;
 }
 
+div.center {
+  width: 75%;
+}
+
 }

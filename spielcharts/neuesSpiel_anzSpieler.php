@@ -35,7 +35,7 @@ if(!isset($username)) {
       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="neuesSpiel_anzSpieler.php">Neues Spiel</a>
         <a class="dropdown-item" href="laufendesSpiel.php">Laufendes Spiel</a>
-        <a class="dropdown-item" href="#">Statistik</a>
+        <!--<a class="dropdown-item" href="#">Statistik</a>-->
       </div>
     </li>
       </ul>
