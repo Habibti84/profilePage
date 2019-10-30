@@ -288,6 +288,10 @@ ul {
   margin-top: 2.7rem;
 }
 
+.aside {
+  font-size: 0.8rem;
+}
+
 
 @media screen and (max-width: 600px) {
 header h1 {

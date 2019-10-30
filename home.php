@@ -9,7 +9,7 @@ $userName = $_SESSION['username'];
 
 
 if($userName == 'NamicsAG') {
-  $text = "Als ich mich über die Namics AG informiert habe, war ich begeistert. Die Projekte in Ihrem Portfolio entsprechen genau dem, was mich interessiert. WebApps und ECommerce-Shops im grossen Stil, nach den neusten Standards und dazu eine Firmenpolitik, bei der das Wohlbefinden der Mitarbeiter ganz weit oben steht. Es ist ein Traum, bei einem solch professionellen Entwicklerteam meinen Horizont zu erweitern und in so einem Umfeld zu arbeiten. <br> Ausserdem hatten wir einen Match bei den wichtigsten Eigenschaften zur Firmenkultur <span id='smile'>☺</span>: Hilfsbereitschaft, Ehrgeiz und Mut.";
+  $text = "Als ich mich über die Namics AG informiert habe, war ich begeistert. Die Projekte in Ihrem Portfolio entsprechen genau meinen Interessen. WebApps und ECommerce-Shops im grossen Stil, nach den neusten Standards und dazu eine Firmenpolitik, bei der das Wohlbefinden der Mitarbeiter ganz weit oben steht. Es ist ein Traum, bei einem solch professionellen Entwicklerteam meinen Horizont zu erweitern und in so einem Umfeld zu arbeiten. <br> Ausserdem hatten wir einen Match bei den wichtigsten Eigenschaften zur Firmenkultur <span id='smile'>☺</span>: Hilfsbereitschaft, Ehrgeiz und Mut.";
 }
 
  ?>
@@ -125,7 +125,7 @@ if($userName == 'NamicsAG') {
             <img src="img/aim.jpg" class="rounded-circle" alt="">
           </div>
           <div class="col-sm col-md-8">
-            <p>Diese Ausbildung bedeutet mir alles und ich will sie zu meinem Allerbesten nutzen. Mein Ziel ist es, eine qualifizierte und begeisterte Applikations-Entwicklerin zu werden. Der nächste Schritt zu diesem Ziel, ist eine Praktikumsstelle zu finden, die mir die Möglichkeit bietet, mich dahin gehend zu entwickeln.<br> <?php echo $text ?><br>Wenn ich bei Ihnen mein Praktikum absolvieren kann, ist der nächste und ein riesiger Schritt zu meinem Ziel getan. Ich bin bereit vollen Einsatz zu geben und mich einzubringen, um mein Ziel zu erreichen und mich trotz meines Anfängerniveaus als Mehrwert für das Unternehmen einzubringen.</p>
+            <p>Diese Ausbildung bedeutet mir alles und ich will sie zu meinem Allerbesten nutzen. Mein Ziel ist es, eine qualifizierte und begeisterte Applikations-Entwicklerin zu werden. Der nächste Schritt zu diesem Ziel, ist eine Praktikumsstelle zu finden, die mir die Möglichkeit bietet, mich dahin gehend zu entwickeln.<br> <strong><?php echo $text ?></strong> <br>Wenn ich bei Ihnen mein Praktikum absolvieren kann, ist der nächste, riesige Schritt zu meinem Ziel getan. Ich bin bereit, vollen Einsatz zu geben und mich einzubringen, um mein Ziel zu erreichen und mich trotz meines Anfängerniveaus als Mehrwert für das Unternehmen zu erweisen.</p>
           </div>
         </div>
         </div>
@@ -210,7 +210,7 @@ if($userName == 'NamicsAG') {
   <div id="arbeit" class="grey container-fluid extraMarg ">
     <div class="container">
       <h2>Arbeit</h2>
-      <p class="zitat">"Wähle einen Beruf den du liebst, und du brauchst keinen Tag mehr zu Arbeiten." <br> <span>-Konfuzius</span> </p>
+      <p class="zitat">"Für seine Arbeit muss man Zustimmung suchen, aber niemals Beifall." <br> <span>-Charles-Louis de Montesquieu</span> </p>
       <div class="container">
         <div class="row edu">
           <div class="col-sm">
@@ -339,13 +339,13 @@ if($userName == 'NamicsAG') {
 
             <div class="col-sm">
               <a href="ticTacToe/ticTacToe.html"><div class="containerCenter">
-                <h4 class="center">Tic Tac Toe</h4>
+                <h4 class="center">Tic Tac Toe<br><span class="aside">Aus meiner Schulzeit</span></h4>
               </div></a>
             </div>
 
             <div class="col-sm">
               <a href="hangman/hangman.html"><div class="containerCenter">
-                <h4 class="center">Hangman</h4>
+                <h4 class="center">Hangman<br><span class="aside">Aus meiner Schulzeit</span></h4>
               </div></a>
             </div>
 
@@ -357,13 +357,13 @@ if($userName == 'NamicsAG') {
 
             <div class="col-sm">
               <a href="spielcharts/index.php" target="_blank"><div class="containerCenter">
-                <h4 class="center">Spiel Charts</h4>
+                <h4 class="center">Spiel Charts<br><span class="aside">PHP/MYSQL Playground</span></h4>
               </div></a>
             </div>
 
             <div class="col-sm">
               <a href="abrechnung_neu/index.php" target="_blank"><div class="containerCenter">
-                <h4 class="center">Abrechnung, Jacqueline's Kunden</h4>
+                <h4 class="center">Abrechnung, Jacqueline's Kunden<br><span class="aside">Vor meiner Schulzeit</span></h4>
               </div></a>
             </div>
 
