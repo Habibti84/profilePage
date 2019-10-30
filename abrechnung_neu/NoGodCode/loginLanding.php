@@ -34,7 +34,7 @@
     $datab1 = "beatursprung";
     $table1 = "Beat Ursprung";
     $adress = "Beat Ursprung<br>Schützenstrasse 63<br>9100 Herisau";
-    $id = 14;
+    $id = 16;
   }
 
 

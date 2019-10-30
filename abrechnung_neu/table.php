@@ -40,7 +40,7 @@ $totalZeit = array();
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <!--<ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#">Abrechnung aktuell</a>
       </li>
@@ -59,7 +59,7 @@ $totalZeit = array();
              ?>
         </div>
       </li>
-    </ul>
+    </ul>-->
   </div>
 </nav>
 
@@ -130,13 +130,14 @@ $totalZeit = array();
                             array_push($totalBetr, $formatEndbetr);
                           echo "</tr>";
                         echo "</tfoot>";
-                        
+
                     }
 
 
 }
 
                 }
+
                 //$connect->close();
               }
               else {

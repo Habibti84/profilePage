@@ -15,7 +15,7 @@
   $kunde = $_POST["kunde"];
   $_SESSION['kunde'] = $kunde;
   if($kunde == 'Beat Ursprung') {
-    $kunde = 14;
+    $kunde = 16;
   }
   else if($kunde == 'Rufin') {
     $kunde = 11;

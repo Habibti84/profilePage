@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 <head>
@@ -11,64 +12,180 @@
 </head>
 <body>
 
-
-  <header class="container-fluid">
-    <a class="btnBack btn btn-outline-secondary" href="../home.php#projekte">Zurück</a>
+  <header id="hangman" class="container-fluid">
+    <a class="btnBack btn btn-outline-secondary" href="../home.php">Zurück</a>
     <div class="container">
 
+      <div class="row">
+        <div class="col-6">
+          <h1 class="">Hangman</h1>
+          <p class="lead">Errate das Wort mit 7 Versuchen</p>
 
-    <div class="row">
-      <div class="col-sm-12 col">
-        <h1 class="display-4">Hangman</h1>
-        <p class="lead">Errate das Wort mit 7 Versuchen</p>
+        </div>
+        <div class="col-6">
+          <h4 class="">Wähle ein Modul um ein Wort zu generieren:</h4>
+          <select class="btnBack btn btn-outline-secondary">
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM101" value="M101">Modul 101</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM104" value="M104">Modul 104</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM105" value="M105">Modul 105</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM133" value="M133">Modul 133</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM152" value="M152">Modul 152</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM226A" value="M226A">Modul 226a</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM307" value="M307">Modul 307</option>
+            <option class="sel btnModul btn btn-outline-secondary" id="loadM403" value="M403">Modul 403</option>
+          </select>
+        </div>
       </div>
-
-      <div class="col-sm-12 col">
-        <h1 class="">Dein Wort:</h1>
-        <p id="getWord" value="" class=""></p>
-
-      </div>
-    </div>
     </div>
   </header>
 
 
 
 
+
   <div class="container">
+    <div class="container-fluid">
+      <h2>Dein Wort:</h2>
+      <p id="getWord"></p>
+    </div>
+    <div class="container-fluid">
+      <h4>Hinweis:</h4>
+      <p id="hint"></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container-fluid">
+
+
+
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm-12 col-md-5">
         <h5>Verbleibende Versuche:</h5>
+        <img id="img" src="img/7.jpg" alt="">
         <p id="versuche"></p>
-        <img id="img" src="img/0.jpg" alt="">
       </div>
-      <div class="col-sm">
-        <div class="input-group mb-3">
 
-          <input id="inputLetter" type="text" class="form-control" placeholder="Buchstabe" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button id="check" class="btn btn-outline-secondary" type="button">Check</button>
+      <div class="col-sm-12 col-md-7 centered">
+        <div class="row">
+          <div class="col char">
+            A
           </div>
-
-
+          <div class="col char">
+            B
+          </div>
+          <div class="col char">
+            C
+          </div>
+          <div class="col char">
+            D
+          </div>
+          <div class="col char">
+            E
+          </div>
         </div>
-        <h5 id='try'></h5>
-      </div>
-      <div class="col-sm">
-        <h5>Bereits gebrauchte Buchstaben:</h5>
-        <p id="usedLetters"></p>
+
+        <div class="row">
+          <div class="col char">
+            F
+          </div>
+          <div class="col char">
+            G
+          </div>
+          <div class="col char">
+            H
+          </div>
+          <div class="col char">
+            I
+          </div>
+          <div class="col char">
+            J
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col char">
+            K
+          </div>
+          <div class="col char">
+            L
+          </div>
+          <div class="col char">
+            M
+          </div>
+          <div class="col char">
+            N
+          </div>
+          <div class="col char">
+            O
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col char">
+            P
+          </div>
+          <div class="col char">
+            Q
+          </div>
+          <div class="col char">
+            R
+          </div>
+          <div class="col char">
+            S
+          </div>
+          <div class="col char">
+            T
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col char">
+            U
+          </div>
+          <div class="col char">
+            V
+          </div>
+          <div class="col char">
+            W
+          </div>
+          <div class="col char">
+            X
+          </div>
+          <div class="col char">
+            Y
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col char">
+            Z
+          </div>
+          <div class="col char unvisible disable">
+
+          </div>
+          <div class="col char unvisible disable">
+
+          </div>
+          <div class="col char unvisible disable">
+
+          </div>
+          <div class="col char unvisible disable">
+
+          </div>
+        </div>
+        </div>
 
       </div>
     </div>
   </div>
+</div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
 
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="scripts/main.js"></script>
 
 </body>
 </html>

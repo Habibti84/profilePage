@@ -1,172 +1,184 @@
 
-/*Funktion um die Anzahl Underlines auszugeben*/
 
-
-
-/*Funktion um die Anzahl Underlines auszugeben*/
+//Dictionary
+var hangman_dictionary = {
+    "M101": {
+      "Datentyp": "eine Komponente der Variablendeklaration",
+      "Response": "Gegenteil von REQUEST?",
+      "Element": "Wie nennt man folgende HTML Begriffe in Fachsprache: <a>, <body>, <h1>?",
+      "href": "Wo ist der link im <a> Element abgelegt?",
+      "Atom": "Ein sehr bekannter Texteditor für HTML/CSS",
+      "Selektor": "Wie nennt man den Start eines CSS Objekts?",
+      "Padding": "Wie bezeichnet man den Innenabstand in CSS?",
+      "Margin": "Wie bezeichnet man den Aussenabstand in CSS?"},
+    "M104": {
+      "Datentyp": "eine Komponente der Variablendeklaration",
+      "beziehungen": "Was wird im ERM Modell dargestellt? Tipp: keine Attribute / Daten, das gesuchte Wort ist in der Mehrzahl.",
+      "kardinalitaet": "Wie heisst der Überbegriff folgender Bezeichnungen: 1:1, 1:n, n:m",
+      "entity": "Für was steht das 'E' im Wort ERD/ERM?",
+      "relation": "Für was steht das 'R' im Wort ERD/ERM?",
+      "model": "Für was steht das 'M' im Wort ERM?",
+      "foreign": "Englisches Wort für 'Fremd'?",
+      "primaerschluessel": "Kein Hausschlüssel sondern?",
+      "spalte": "Teil einer Tabelle der von oben nach unten gelesen wird",
+      "zeile": "Teil einer Tabelle der von links nach rechts gelesen wird"},
+    "M105": {
+      "normalform": "es gibt mehrere Formen wie heissen diese?",
+      "root": "Welcher MYSQL Befehl um sich als Admin anzumelden?",
+      "help": "Befehl um Hilfeanzeige zu erhalten",
+      "drop": "Befehl um Datenbank zu löschen",
+      "group": "Überbegriff für Gruppierung",
+      "select": "am häufigsten verweneter MYSQL Befehl",
+      "datenbank": "Wie nennt man eine Sammlung vieler Daten"},
+    "M133": {
+      "Datentyp": "eine Komponente der Variablendeklaration",
+      "preprocessor": "Für was stehen die beiden P in 'PHP'?",
+      "hypertext": "Für was steht das H in 'PHP'?",
+      "owasp": "Wie nennt man die bekannteste Schwachstellen Rangliste? (nur der Name)",
+      "injection": "Die am häufigsten vorkommende Schwachstelle? (basiert auf nicht Validierung der Formulare)",
+      "programmierschnittstelle": "Was ist eine API?",
+      "array": "Wie nennt man eine Liste in PHP?",
+      "blackbox": "Wie nennt man den Test, bei dem die Testperson keinerlei Informationen erhält?",
+      "whitebox": "Wie nennt man den Test, bei dem der Testperson alle Informationen zur Verfügugn gestellt werden? (ink. Quellcode)"},
+    "M152": {
+      "Grafik": "eine visuelle Darstellung im Web",
+      "serifen": "Es gibt Schriftarten mit und ohne ???",
+      "grafik": "Visuelle Darstellung im Web",
+      "font": "Englischer Begriff für 'Schriftart'?",
+      "bitmap": "bmp ausgeschrieben?"},
+    "M226A": {
+      "Klasse": "Bauplan für gleichartige Objekte",
+      "Objekt": "Ausprägung bzw. Instanz einer Klasse",
+      "Konstruktor": "Klassenfunktion zum Erstellen eines Objekts",
+      "klasse": "wird auch als 'Bauplan' für Objekte der OOP bezeichnet",
+      "aggregation": "Bei einer ???: das Objekt ist von der Klasse unabhängigt und lebt weiter selbst wenn die Klasse nicht mehr existieren sollte",
+      "komposition": "Bei der ??? ist die Klasse zwingend notwendig, damit das Objekt / die Klasse überhaupt leben kann",
+      "assoziation": "Bei einer ??? besteht eine Verbindung zwischen zwei Objekten / Klasse & Objekt",
+      "unified": "Wofür steht das 'U' bei UML?",
+      "modeling": "Wofür steht das 'M' bei UML?",
+      "language": "Wofür steht das 'L' bei UML?",
+      "konstruktor": "wird  beim Erzeugen bzw. Auflösen von Objekten und Variablen aufgerufen",
+      "setter": "Eine Methode zum setzen z.B eines Textes",
+      "getter": "Eine Methode zum etwas erhalten z.B ein Text"},
+    "M307": {
+      "document": "Für was steht das 'D' in DOM?",
+      "object": "Für was steht das 'O' in DOM?",
+      "model": "Für was steht das 'M' in DOM?",
+      "debugging": " Fehler oder Probleme in einem Computerprogramm finden und beheben"},
+    "M403": {
+      "Rueckgabetyp": "Bestandteil Funktionskopf",
+      "Datentyp": "eine Komponente der Variablendeklaration",
+      "gleitkommazahl": "Was ist ein double? Tipp: es ist eine Zahl ;)",
+      "ganzzahl": "Was ist ein double? Tipp: es ist eine Zahl ;)",
+      "boolean": "Wie heisst der Datentyp für true/false?",
+      "byte": "1 ??? Hat 8 Bits",
+      "Variablenname": "eine Komponente Variablendeklaration",
+      "Parameterliste": "Bestandteil vom Funktionskopf",
+      "Rueckgabetyp": "Bestandteil Funktionskopf"}
+};
 
 var word;
 var arrChar = [];
 var arrUsedLetters = [];
 var arrUnderL = [];
-var wordToCompare;
 var check = true;
+var char;
+var counter = 7;
+var elem;
+var winsInARow = 0;
 
-var chooseWord = function() {
 
-  //Wort wird aus Array geholt
-  var words = ["ATTRIBUT"];
-  var rand = Math.floor(Math.random()*words.length);
-  word = words[rand];
+$('.btnModul').each(function() {
+  if($(this).is(':selected')) {
+    $('.char').addClass('disable');
+  }
+})
 
-  //Die einzelnen Buchstabenm sowie die nötige Anzahl Underlines werden in je ein Array gepusht
+
+$('.btnModul').on('click', function(){
+  document.getElementById('img').src = "img/7.jpg";
+
+  document.getElementById('getWord').innerHTML = "";
+  $('.char').removeClass('disable');
+
+  counter = 7;
+  arrUnderL = [];
+  arrChar = [];
+
+  /*Dictionary wird geladen*/
+  var modul = $(this).val();
+  var keys = Object.keys(hangman_dictionary[modul]);
+  word = keys[Math.floor(Math.random() * keys.length)]
+  wordUpper = word.toUpperCase();
+  var description = hangman_dictionary[modul][word];
+  $('#hint').text(description);
+  chooseWord();
+});
+
+//Funktion - Gibt das Wort mit Underlines aus
+function chooseWord() {
   for(var x = 0; x < word.length; x++) {
     arrUnderL.push('_');
-    arrChar.push(word[x]);
-
-
+    arrChar.push(wordUpper[x]);
   }
-
   //Wort wird mit Leerzeichen als Trennzeichen ausgegeben
   document.getElementById('getWord').innerHTML = arrUnderL.join(' ');
 }
 
-window.onload = chooseWord;
-
-//Funktion um die Buchstaben im Wort abzuchecken
-
-var checkChar = function() {
-  check = true;
-  document.getElementById('try').innerHTML = "";
-  //Mehr als ein Buchstabe eingegeben?
-  var char = document.getElementById('inputLetter').value.toUpperCase();
-
-
-  console.log(usedLetters);
-  console.log("Bitte");
-
-  if(char.length > 1) {
-    document.getElementById('try').innerHTML = "Nur 1 Buchstabe eingeben!";
+//Funktion - Klick auf Buchstabe holt Buchstabe in Variable
+window.onload = function(e) {
+    var myFunction = function() {
+    elem = event.target;
+    char = elem.innerHTML;
+    //wieso auch immer, in "char" hat es ewig viele Leerzeichen. Damit werden sie entfernt
+    char = char.replace(/\s/g, "");
   }
-
-  else {
-    if(!char.match(/[A-Za-z]/)) {
-      document.getElementById('try').innerHTML = "Nur Buchstaben eingeben!";
-    }
-    else {
-      console.log("Hiiilfe");
-      console.log("Length: " + arrUsedLetters.length);
-      for(var x = 0; x <= arrUsedLetters.length; x++) {
-        if(arrUsedLetters[x] == char) {
-          console.log("Figg di");
-          document.getElementById('try').innerHTML = "Buchstabe bereits gecheckt!";
-
-          check = false;
-        }
-
-      }
-
-      if(check) {
-        check = true;
-        console.log(char);
-        arrUsedLetters.push(char);
-        document.getElementById('usedLetters').innerHTML = arrUsedLetters.join(' ');
-
-        for(var x = 0; x < arrChar.length; x++) {
-          if(arrChar[x] == char) {
-            arrUnderL[x] = char;
-          }
-          else {
-            //document.getElementById('try').innerHTML = "Buchstabe kommt nicht vor!";
-          }
-
-        }
-
-        document.getElementById('getWord').innerHTML = arrUnderL.join(' ');
-      }
-
-
-    }
-
-
-
-
-
+  var clickDivs = document.getElementsByClassName('char');
+  for(var x=0; x<clickDivs.length; x++) {
+    clickDivs[x].addEventListener('click', myFunction);
+    clickDivs[x].addEventListener('click', checkChar);
   }
 }
 
-
-
-
-
-
-document.getElementById('check').onclick = checkChar;
-
-//Funktion um die Buchstaben im Wort abzuchecken
-
+//Funktion - um die Buchstaben im Wort abzuchecken
 var checkChar = function() {
-  check = true;
-  document.getElementById('try').innerHTML = "";
-  //Mehr als ein Buchstabe eingegeben?
-  var char = document.getElementById('inputLetter').value.toUpperCase();
+  var check = false;
 
-
-  console.log(usedLetters);
-  console.log("Bitte");
-
-  if(char.length > 1) {
-    document.getElementById('try').innerHTML = "Nur 1 Buchstabe eingeben!";
+  if($(elem).hasClass('disable')) {
   }
 
   else {
-    if(!char.match(/[A-Za-z]/)) {
-      document.getElementById('try').innerHTML = "Nur Buchstaben eingeben!";
-    }
-    else {
-      console.log("Hiiilfe");
-      console.log("Length: " + arrUsedLetters.length);
-      for(var x = 0; x <= arrUsedLetters.length; x++) {
-        if(arrUsedLetters[x] == char) {
-          console.log("Figg di");
-          document.getElementById('try').innerHTML = "Buchstabe bereits gecheckt!";
-
-          check = false;
-        }
-
-      }
-
-      if(check) {
+    for(var x = 0; x < arrChar.length; x++) {
+      if(arrChar[x] == char) {
+        arrUnderL[x] = char;
         check = true;
-        console.log(char);
-        arrUsedLetters.push(char);
-        document.getElementById('usedLetters').innerHTML = arrUsedLetters.join(' ');
-
-        for(var x = 0; x < arrChar.length; x++) {
-          if(arrChar[x] == char) {
-            arrUnderL[x] = char;
-          }
-          else {
-            //document.getElementById('try').innerHTML = "Buchstabe kommt nicht vor!";
-          }
-
+      }
+      if(!arrUnderL.includes("_")) {
+        winsInARow++;
+        if(window.location.href == "http://localhost/LW1_Webdev/project/hangman/") {
+          window.location.assign("http://localhost/LW1_Webdev//project/start.html");
         }
+        document.getElementById('img').src = "img/win.png";
+        document.getElementById('versuche').innerHTML = "<span>Du hast " + winsInARow + " Mal in Folge gewonnen!</span> <br> Gewinne so viele Spiele wie möglich nacheinander und <span>wähle ein neues Modul.</span>";
+        $('.char').addClass('disable');
 
-        document.getElementById('getWord').innerHTML = arrUnderL.join(' ');
       }
 
+    }
+    if(!check) {
+      counter--;
+      document.getElementById('img').src = "img/" + counter + ".jpg";
 
+      if(counter == 0) {
+        document.getElementById('versuche').innerHTML = "<span>Du bist tot!</span> <br> Wenn du weiterspielen möchtest,<br> <span>erneut ein Modul wählen.</span>";
+        winsInARow = 0;
+        $('.char').addClass('disable');
+      }
     }
 
 
+    document.getElementById('getWord').innerHTML = arrUnderL.join(' ');
 
-
-
+    elem.classList.add('disable');
   }
 }
-
-
-
-
-
-
-document.getElementById('check').onclick = checkChar;

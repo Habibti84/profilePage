@@ -21,9 +21,9 @@ include("dbConnect.php");
 
 
 
-    <form method="post" action="addData.php">      
+    <form method="post" action="addData.php">
 
-      <input type="text" name="date" placeholder="Datum">
+      <input type="text" name="date" placeholder="Datum: yyyy.mm.dd">
       <input type="text" name="time" placeholder="Time">
       <input type="text" name="ort" placeholder="Ort">
       <input type="text" name="bemerkungen" placeholder="Bemerkungen">

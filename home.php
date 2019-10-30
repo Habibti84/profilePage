@@ -9,7 +9,7 @@ $userName = $_SESSION['username'];
 
 
 if($userName == 'NamicsAG') {
-  $text = "Als ich mich über die Namics AG informiert habe, war ich begeistert. Die Projekte in Ihrem Portfolio entsprechen genau meinen Interessen. WebApps und ECommerce-Shops im grossen Stil, nach den neusten Standards und dazu eine Firmenpolitik, bei der das Wohlbefinden der Mitarbeiter ganz weit oben steht. Es ist ein Traum, bei einem solch professionellen Entwicklerteam meinen Horizont zu erweitern und in so einem Umfeld zu arbeiten. <br> Ausserdem hatten wir einen Match bei den wichtigsten Eigenschaften zur Firmenkultur <span id='smile'>☺</span>: Hilfsbereitschaft, Ehrgeiz und Mut.";
+  $text = "Als ich mich über die Namics AG informiert habe, war ich begeistert. Die Projekte in Ihrem Portfolio entsprechen genau meinen Interessen. WebApps und ECommerce-Shops im grossen Stil, nach den neusten Standards und dazu eine Firmenpolitik, bei der das Wohlbefinden der Mitarbeiter ganz weit oben steht. Es ist ein Traum, bei einem solch professionellen Entwicklerteam meinen Horizont zu erweitern und in so einem Umfeld zu arbeiten. <br> Ausserdem haben wir einen Match bei den wichtigsten Eigenschaften zur Firmenkultur <span id='smile'>☺</span>: Hilfsbereitschaft, Ehrgeiz und Mut.";
 }
 
  ?>
@@ -266,15 +266,15 @@ if($userName == 'NamicsAG') {
               <li><span class="faehigkeitBeschr">HTML 5</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i></span></li>
               <li><span class="faehigkeitBeschr">CSS 3</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               <li><span class="faehigkeitBeschr">Bootstrap</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
-              <li><span class="faehigkeitBeschr">JavaScript</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+              <li><span class="faehigkeitBeschr">JavaScript</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
             </ul>
           </div>
           <div class="col-sm">
             <ul>
-              <li><span class="faehigkeitBeschr">JQuery</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
-              <li><span class="faehigkeitBeschr">PHP 7</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+              <li><span class="faehigkeitBeschr">JQuery</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+              <li><span class="faehigkeitBeschr">PHP 7</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               <li><span class="faehigkeitBeschr">MySQL</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
-              <li><span class="faehigkeitBeschr">Java</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+              <li><span class="faehigkeitBeschr">Java</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
 
             </ul>
           </div>
@@ -320,7 +320,7 @@ if($userName == 'NamicsAG') {
               <ul>
                 <li><span class="faehigkeitBeschr">Git Hub</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
                 <li><span class="faehigkeitBeschr">Xampp</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
-                <li><span class="faehigkeitBeschr">phpMyAdmin</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
+                <li><span class="faehigkeitBeschr">phpMyAdmin</span><span class="faehigkeitRate"><i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i><i class="fas fa-star unfilled"></i></span></li>
               </ul>
             </div>
           </div>
@@ -339,15 +339,15 @@ if($userName == 'NamicsAG') {
 
             <div class="col-sm">
               <a href="ticTacToe/ticTacToe.html"><div class="containerCenter">
-                <h4 class="center">Tic Tac Toe<br><span class="aside">Aus meiner Schulzeit</span></h4>
+                <h4 class="center">Tic Tac Toe<br><span class="aside">Entstanden:<br>Während meiner Schulzeit</span></h4>
               </div></a>
             </div>
 
-            <div class="col-sm">
+            <!--<div class="col-sm">
               <a href="hangman/hangman.html"><div class="containerCenter">
                 <h4 class="center">Hangman<br><span class="aside">Aus meiner Schulzeit</span></h4>
               </div></a>
-            </div>
+            </div>-->
 
 
 
@@ -363,7 +363,7 @@ if($userName == 'NamicsAG') {
 
             <div class="col-sm">
               <a href="abrechnung_neu/index.php" target="_blank"><div class="containerCenter">
-                <h4 class="center">Abrechnung, Jacqueline's Kunden<br><span class="aside">Vor meiner Schulzeit</span></h4>
+                <h4 class="center">Abrechnung, Jacqueline's Kunden<br><span class="aside">Entstanden:<br>Vor meiner Schulzeit</span></h4>
               </div></a>
             </div>
 
